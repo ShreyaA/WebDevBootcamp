@@ -1,0 +1,54 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    color: black;
+  }
+  .flex-container
+  {
+    display: flex;
+  }
+.note {
+    flex: 2;
+}
+.title
+{
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    background-color:beige;
+    color: black;
+    border-radius: 10px;
+}
+.content
+{
+    margin: 5px;
+    padding: 5px;
+    background-color:beige;
+    color: black;
+    border-radius: 10px;
+}
+.button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    opacity: 0.8;
+  }
+  .button:hover {
+    color: whitesmoke;
+    opacity: 1;
+  }
+  .button.add
+  {
+    background-color: #4CAF50; /* Green */
+  }
+  .button.edit
+  {
+    background-color: #008CBA; /* Blue */
+  }

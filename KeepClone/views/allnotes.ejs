@@ -1,0 +1,17 @@
+<% if(locals.notes) { %>
+    <h2> Your notes: </h2>
+    <div class="flex-container">
+    <% for (const [id, note] of Object.entries(locals.notes)) { %>
+        <%    console.log(id, note); %>
+        <form action="/editNote" method="POST">
+            <div class="note" id="<%= id %>" >
+                <input hidden name="noteid" value="<%= id %>"> 
+                <input class="title" name="title" value="<%= note.title %>"> <br>
+                <textarea class="content" name="content" rows="10" cols="100"><%= note.content %> </textarea> <br>
+                <input class="button edit" type="submit" value="Edit Note">
+            </div>
+        </form>
+    <%  } %>
+    </div>
+<%  } %>
+    

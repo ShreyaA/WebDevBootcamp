@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Clone</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1> Home </h1>
+    <h3> Add your notes here: </h3>
+    <form action="/addNote" method="POST">
+        <input class="title" type="text" name="title" placeholder="Note title">
+        <br>
+        <textarea class="content" name="content" rows="10" cols="100"> </textarea>
+        <br>
+        <input type="submit" class="button add" value="Add Note">
+      </form>
+    <%- include("allnotes.ejs") %>
+</body>
+</html>
